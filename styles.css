@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=VT323&display=swap");
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "VT323", monospace;
+}
+.header-text {
+  font-family: "Cascadia Mono", sans-serif;
+}
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  background: #222;
+  color: #fff;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%; /* Start from outside the container */
+  animation: scroll-left 10s linear infinite;
+  font-size: 1.2rem;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
