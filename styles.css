@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,4 +23,72 @@
   100% {
     transform: translateX(-100%);
   }
+}
+header {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  padding: 3rem 1rem 2rem;
+  border-bottom: 1px solid;
+}
+.station-freq {
+  font-family: "VT323", monospace;
+  font-size: 1.3rem;
+  letter-spacing: spacing 0.4em;
+  margin-bottom: 0.5rem;
+}
+.station-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.2em;
+  line-height: 0.9;
+}
+.station-tagline {
+  font-family: "VT323", monospace;
+  font-size: 1.1rem;
+  letter-spacing: 0.25em;
+  margin-top: 0.75rem;
+}
+.on-air-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.on-air {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+}
+.on-air-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+}
+.signal-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 22px;
+}
+.signal-bars span:nth-child(1) {
+  height: 6px;
+}
+.signal-bars span:nth-child(2) {
+  height: 10px;
+}
+.signal-bars span:nth-child(3) {
+  height: 15px;
+}
+.signal-bars span:nth-child(4) {
+  height: 20px;
+}
+.signal-bars span {
+  display: block;
+  width: 5px;
+  background: #000;
+  border-radius: 1px;
 }
