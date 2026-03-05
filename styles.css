@@ -1,26 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=VT323&display=swap");
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: "VT323", monospace;
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-.header-text {
-  font-family: "Cascadia Mono", sans-serif;
-}
-.scroll-container {
+.ticker {
   width: 100%;
   overflow: hidden;
-  background: #222;
-  color: #fff;
-  padding: 10px 0;
+  padding: 6px 0;
   box-sizing: border-box;
+  font-family: "VT323", monospace;
 }
-.scroll-text {
+.ticker-inner {
   display: inline-block;
   white-space: nowrap;
-  padding-left: 100%; /* Start from outside the container */
+  padding-left: 100%;
   animation: scroll-left 10s linear infinite;
-  font-size: 1.2rem;
 }
 @keyframes scroll-left {
   0% {
