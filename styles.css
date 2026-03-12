@@ -1,7 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=VT323&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+:root {
+  --dark: #261e1f;
+  --hotpink: #d91e63;
+  --darkpink: #8c1642;
+  --purple: #5e53a6;
+  --blue: #304f8c;
+}
+body {
+  background: var(--dark);
+  color: #fff;
+  font-family: "Special Elite", monospace;
 }
 .ticker {
   width: 100%;
@@ -9,6 +21,8 @@
   padding: 6px 0;
   box-sizing: border-box;
   font-family: "VT323", monospace;
+  background: var(--hotpink);
+  color: #000;
 }
 .ticker-inner {
   display: inline-block;
@@ -33,14 +47,21 @@ header {
 .station-freq {
   font-family: "VT323", monospace;
   font-size: 1.3rem;
-  letter-spacing: spacing 0.4em;
+  color: var(--purple);
+  letter-spacing: 0.4em;
   margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px var(--purple);
 }
 .station-name {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 5rem;
+  font-size: clamp(5rem, 14vw, 11rem);
   letter-spacing: 0.2em;
   line-height: 0.9;
+  text-shadow:
+    0 0 20px var(--hotpink),
+    0 0 60px var(--hotpink),
+    0 0 120px #8c1642,
+    4px 4px 0px var(--purple);
 }
 .station-tagline {
   font-family: "VT323", monospace;
