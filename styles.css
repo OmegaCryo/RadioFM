@@ -4,11 +4,7 @@
   padding: 0;
 }
 :root {
-  --dark: #261e1f;
-  --hotpink: #d91e63;
-  --darkpink: #8c1642;
-  --purple: #5e53a6;
-  --blue: #304f8c;
+  --dark: #292840;
 }
 body {
   background: var(--dark);
@@ -21,7 +17,6 @@ body {
   padding: 6px 0;
   box-sizing: border-box;
   font-family: "VT323", monospace;
-  background: var(--hotpink);
   color: #000;
 }
 .ticker-inner {
@@ -43,25 +38,19 @@ header {
   text-align: center;
   z-index: 10;
   padding: 3rem 1rem 2rem;
+  border-bottom: 1px solid #000;
 }
 .station-freq {
   font-family: "VT323", monospace;
   font-size: 1.3rem;
-  color: var(--purple);
   letter-spacing: 0.4em;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 10px var(--purple);
 }
 .station-name {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(5rem, 14vw, 11rem);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   line-height: 0.9;
-  text-shadow:
-    0 0 20px var(--hotpink),
-    0 0 60px var(--hotpink),
-    0 0 120px #8c1642,
-    4px 4px 0px var(--purple);
 }
 .station-tagline {
   font-family: "VT323", monospace;
@@ -76,11 +65,30 @@ header {
   gap: 1rem;
   margin-top: 1.25rem;
 }
+
 .on-air {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.15em;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 4px 14px;
+  background: green;
+  animation: blink 1.2s step-start infinite;
 }
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .on-air-dot {
   display: inline-block;
   width: 8px;
@@ -113,7 +121,6 @@ header {
   border-radius: 1px;
 }
 .now-playing-bar {
-  border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
