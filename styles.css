@@ -88,7 +88,6 @@ header {
     opacity: 1;
   }
 }
-
 .on-air-dot {
   display: inline-block;
   width: 8px;
@@ -121,9 +120,74 @@ header {
   border-radius: 1px;
 }
 .now-playing-bar {
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  padding: 0.9rem 2rem;
   display: flex;
   align-items: center;
   font-family: "VT323", monospace;
   gap: 1.5em;
+}
+.np-label {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.np-track {
+  font-size: 1rem;
+  letter-spacing: 0.5em;
+}
+.waveform {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 20px;
+}
+.waveform span {
+  display: block;
+  width: 3px;
+  background: green;
+  border-radius: 2px;
+  animation: wave 0.8s ease-in-out infinite alternate;
+}
+@keyframes wave {
+  50% {
+    transform: scaleY(0.25);
+  }
+}
+.waveform span:nth-child(1) {
+  height: 6px;
+  animation-delay: 0s;
+}
+.waveform span:nth-child(2) {
+  height: 14px;
+  animation-delay: 0.1s;
+}
+.waveform span:nth-child(3) {
+  height: 9px;
+  animation-delay: 0.2s;
+}
+.waveform span:nth-child(4) {
+  height: 18px;
+  animation-delay: 0.15s;
+}
+.waveform span:nth-child(5) {
+  height: 7px;
+  animation-delay: 0.05s;
+}
+.waveform span:nth-child(6) {
+  height: 13px;
+  animation-delay: 0.25s;
+}
+.waveform span:nth-child(7) {
+  height: 5px;
+  animation-delay: 0.3s;
+}
+.waveform span:nth-child(8) {
+  height: 16px;
+  animation-delay: 0.1s;
 }
