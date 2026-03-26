@@ -238,8 +238,40 @@ main {
   cursor: pointer;
   text-decoration: none;
 }
-.tracklist-card {
+.tracklist-card,
+.info-card {
   background: #000;
   border: 1px solid #fff;
   padding: 2rem;
+}
+.card-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.track-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #fff;
+}
+.info-stat {
+  margin-bottom: 1.5rem;
+}
+.stat-label {
+  font-family: "VT323", monospace;
+}
+.stat-value {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+}
+.gene-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
