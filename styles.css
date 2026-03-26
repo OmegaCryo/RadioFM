@@ -5,10 +5,15 @@
   box-sizing: border-box;
 }
 :root {
-  --dark: #292840;
+  --midnight: #292840;
+  --cyan: #4ebfd9;
+  --royal: #3e3c73;
+  --purple: #4e458c;
+  --lightpurple: #8449bf;
+  --white: #ffffff;
 }
 body {
-  background: var(--dark);
+  background: var(--midnight);
   color: #fff;
   font-family: "Special Elite", monospace;
 }
@@ -270,8 +275,23 @@ main {
   font-size: 2rem;
 }
 .gene-tags {
+  font-family: "Bebas Neue", sans-serif;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.5rem;
+}
+.stat-value-signal {
+  font-size: 1.2rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+footer {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #fff;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  font-family: "VT323", monospace;
 }
