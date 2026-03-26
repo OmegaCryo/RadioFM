@@ -5,16 +5,16 @@
   box-sizing: border-box;
 }
 :root {
-  --midnight: #292840;
-  --cyan: #4ebfd9;
-  --royal: #3e3c73;
-  --purple: #4e458c;
-  --lightpurple: #8449bf;
+  --dark: #261e1f;
   --white: #ffffff;
+  --black: #000000;
+  --darkpink: #8c1642;
+  --hotpink: #d91e63;
+  --royal: #304f8c;
 }
 body {
-  background: var(--midnight);
-  color: #fff;
+  background: var(--dark);
+  color: var(--white);
   font-family: "Special Elite", monospace;
 }
 .ticker {
@@ -23,7 +23,8 @@ body {
   padding: 6px 0;
   box-sizing: border-box;
   font-family: "VT323", monospace;
-  color: #000;
+  color: var(--black);
+  background: var(--hotpink);
 }
 .ticker-inner {
   display: inline-block;
@@ -51,12 +52,19 @@ header {
   font-size: 1.3rem;
   letter-spacing: 0.4em;
   margin-bottom: 0.5rem;
+  color: var(--royal);
+  text-shadow: 0 0 10px var(---hotpink);
 }
 .station-name {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(5rem, 14vw, 11rem);
   letter-spacing: 0.02em;
   line-height: 0.9;
+  text-shadow:
+    0 0 20px var(--hotpink),
+    0 0 60px var(--hotpink),
+    0 0 120px #4ebfd9,
+    4px 4px 0px var(--darkpink);
 }
 .station-tagline {
   font-family: "VT323", monospace;
