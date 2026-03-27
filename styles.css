@@ -8,9 +8,10 @@
   --dark: #261e1f;
   --white: #ffffff;
   --black: #000000;
-  --darkpink: #8c1642;
-  --hotpink: #d91e63;
-  --royal: #304f8c;
+  --amber: #f2b263;
+  --yellow: #f2cd5e;
+  --hotpink: #f21365;
+  --bloodorange: #f25e5e;
 }
 body {
   background: var(--dark);
@@ -24,7 +25,7 @@ body {
   box-sizing: border-box;
   font-family: "VT323", monospace;
   color: var(--black);
-  background: var(--hotpink);
+  background: var(--amber);
 }
 .ticker-inner {
   display: inline-block;
@@ -52,8 +53,8 @@ header {
   font-size: 1.3rem;
   letter-spacing: 0.4em;
   margin-bottom: 0.5rem;
-  color: var(--royal);
-  text-shadow: 0 0 10px var(---hotpink);
+  color: var(--bloodorange);
+  text-shadow: 0 0 10px var(--bloodorange);
 }
 .station-name {
   font-family: "Bebas Neue", sans-serif;
@@ -61,16 +62,17 @@ header {
   letter-spacing: 0.02em;
   line-height: 0.9;
   text-shadow:
-    0 0 20px var(--hotpink),
-    0 0 60px var(--hotpink),
-    0 0 120px #4ebfd9,
-    4px 4px 0px var(--darkpink);
+    0 0 20px var(--yellow),
+    0 0 60px var(--yellow),
+    0 0 120px #f2b263,
+    4px 4px 0px var(--amber);
 }
 .station-tagline {
   font-family: "VT323", monospace;
   font-size: 1.1rem;
   letter-spacing: 0.25em;
   margin-top: 0.75rem;
+  color: var(--bloodorange);
 }
 .on-air-container {
   display: flex;
@@ -88,7 +90,7 @@ header {
   gap: 0.5rem;
   align-items: center;
   padding: 4px 14px;
-  background: green;
+  background: var(--amber);
   animation: blink 1.2s step-start infinite;
 }
 @keyframes blink {
@@ -106,7 +108,7 @@ header {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: #000;
+  background: #fff;
   border-radius: 50%;
 }
 .signal-bars {
@@ -130,14 +132,14 @@ header {
 .signal-bars span {
   display: block;
   width: 5px;
-  background: #000;
+  background: var(--bloodorange);
   border-radius: 1px;
 }
 .now-playing-bar {
   position: relative;
   z-index: 10;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid var(--amber);
+  border-bottom: 1px solid var(--amber);
   padding: 0.9rem 2rem;
   display: flex;
   align-items: center;
@@ -164,7 +166,7 @@ header {
 .waveform span {
   display: block;
   width: 3px;
-  background: green;
+  background: var(--bloodorange);
   border-radius: 2px;
   animation: wave 0.8s ease-in-out infinite alternate;
 }
