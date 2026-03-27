@@ -10,8 +10,7 @@
   --black: #000000;
   --amber: #f2b263;
   --yellow: #f2cd5e;
-  --hotpink: #f21365;
-  --bloodorange: #f25e5e;
+  --tan: #f2ebdc;
 }
 body {
   background: var(--dark);
@@ -53,8 +52,8 @@ header {
   font-size: 1.3rem;
   letter-spacing: 0.4em;
   margin-bottom: 0.5rem;
-  color: var(--bloodorange);
-  text-shadow: 0 0 10px var(--bloodorange);
+  color: var(--tan);
+  text-shadow: 0 0 10px var(--tan);
 }
 .station-name {
   font-family: "Bebas Neue", sans-serif;
@@ -72,7 +71,7 @@ header {
   font-size: 1.1rem;
   letter-spacing: 0.25em;
   margin-top: 0.75rem;
-  color: var(--bloodorange);
+  color: var(--tan);
 }
 .on-air-container {
   display: flex;
@@ -132,8 +131,9 @@ header {
 .signal-bars span {
   display: block;
   width: 5px;
-  background: var(--bloodorange);
+  background: var(--tan);
   border-radius: 1px;
+  box-shadow: 0 0 6px var(--tan);
 }
 .now-playing-bar {
   position: relative;
@@ -151,10 +151,15 @@ header {
   letter-spacing: 0.2rem;
   white-space: nowrap;
   text-transform: uppercase;
+  color: var(--amber);
+  text-shadow: 0 0 8px var(--amber);
 }
 .np-track {
   font-size: 1rem;
   letter-spacing: 0.5em;
+}
+.np-track span {
+  color: var(--tan);
 }
 .waveform {
   margin-left: auto;
@@ -166,7 +171,7 @@ header {
 .waveform span {
   display: block;
   width: 3px;
-  background: var(--bloodorange);
+  background: var(--tan);
   border-radius: 2px;
   animation: wave 0.8s ease-in-out infinite alternate;
 }
@@ -219,7 +224,7 @@ main {
 }
 .hero-card {
   grid-column: 1/ -1;
-  border: 1px solid #000;
+  border: 1px solid var(--amber);
   position: relative;
   padding: 2.5rem;
   overflow: hidden;
