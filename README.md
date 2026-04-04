@@ -13,33 +13,11 @@ A personal playlist showcase built with an old internet aesthetic inspired by ea
 
 ---
 
-## 🗂️ Project Structure
-
-```
-radio-network/
-│
-├── the-vice/
-│   ├── index.html       # 80s / Miami Nights station
-│   ├── style.css
-│   └── script.js
-│
-├── madhouse-fm/         # (Coming soon — Rock station)
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-└── index.html           # Hub/dial page linking all stations
-```
-
----
-
 ## 📡 Stations
 
-| Station | Genre | Vibe | Status |
-|---|---|---|---|
+| Station      | Genre           | Vibe                                    | Status         |
+| ------------ | --------------- | --------------------------------------- | -------------- |
 | **The Vice** | 80s / Synth-Pop | Miami neon, VHS nights, hot pink & cyan | 🔨 In Progress |
-| **Madhouse FM** | Rock | Gritty red & black, distortion, underground | 📋 Planned |
-| More TBD | — | — | 💭 Brainstorming |
 
 ---
 
@@ -51,7 +29,7 @@ Each station has its own visual identity but they share a common aesthetic found
 - **Neon glow effects** — CSS `text-shadow` layered for electric text
 - **Scanline overlay** — full-page CSS `repeating-linear-gradient` for CRT feel
 - **CRT vignette** — `radial-gradient` darkening screen edges
-- **Retro typography** — Google Fonts: *Bebas Neue*, *VT323*, *Special Elite*
+- **Retro typography** — Google Fonts: _Bebas Neue_, _VT323_, _Special Elite_
 - **Blinking ON AIR badge** — CSS `@keyframes` animation
 - **Scrolling ticker** — JavaScript `setInterval` cycling through track names
 
@@ -59,56 +37,11 @@ Each station has its own visual identity but they share a common aesthetic found
 
 ## 🛠️ Tech Stack
 
-| Technology | Usage |
-|---|---|
-| HTML5 | Page structure and semantic markup |
-| CSS3 | Styling, animations, theming via CSS variables |
-| Vanilla JavaScript | Ticker animation, minimal interactivity |
-| Google Fonts | Retro typography |
+| Technology         | Usage                                          |
+| ------------------ | ---------------------------------------------- |
+| HTML5              | Page structure and semantic markup             |
+| CSS3               | Styling, animations, theming via CSS variables |
+| Vanilla JavaScript | Ticker animation, minimal interactivity        |
+| Google Fonts       | Retro typography                               |
 
 > **No frameworks. No libraries. Just raw HTML, CSS, and JS.**
-
----
-
-## 🚀 Build Plan
-
-### Phase 1 — Project Setup
-- Folder structure, file creation, Google Fonts linked
-
-### Phase 2 — HTML Skeleton
-- Header, ticker bar, hero section, tracklist, footer
-
-### Phase 3 — Base CSS Styling
-- Colors, fonts, neon glow, ON AIR badge, TUNE IN button
-
-### Phase 4 — Atmosphere CSS
-- Scanlines, grain texture, CRT vignette, glowing borders
-
-### Phase 5 — JavaScript Ticker
-- Array of track names cycling via `setInterval`
-
-### Phase 6 — Polish & Deploy
-- Mobile check, GitHub push, deploy via GitHub Pages or Netlify
-
----
-
-## 🔗 Deployment
-
-- **GitHub Pages** — Free static hosting via repository settings
-- **Netlify** — Alternative free option with drag-and-drop deploy
-
----
-
-## 💡 Future Ideas
-
-- A hub "dial" page where users can tune between all stations
-- CSS variable theming so each station is a reskin of one template
-- Ambient audio loop per station (toggleable)
-- Fake "listener count" or signal strength meter
-
----
-
-## 👤 Author
-
-Personal project — built for fun and portfolio purposes.  
-Inspired by early 2000s web design and the golden age of internet aesthetics.
